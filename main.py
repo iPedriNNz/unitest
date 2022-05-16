@@ -1,3 +1,6 @@
 from calculadora import soma
 
-print(soma(5, 6))
+try:
+    print(soma('15', 15))
+except AssertionError as e:
+    print(f'Conta inválida {e}')
